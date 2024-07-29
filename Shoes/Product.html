@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="icon.gif" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="hide.css" />
+  <link rel="stylesheet" href="all.min.css" />
+  <title>Produit</title>
+
+</head>
+
+<script>
+  ! function(f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function() {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '<?php echo $pixel_id; ?>');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=<?php echo $pixel_id; ?>&ev=PageView&noscript=1" />
+</noscript>
+<style>
+        .title {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .description {
+            font-weight: normal;
+            display: block;
+            margin-bottom: 10px;
+            white-space: pre-line; 
+        }
+    </style>
+<body>
+
+  <div class="sidebar">
+    <div class="" id="exit">✖</div>
+    <div class="links">
+      <ul>
+          <a href="index.html"> <li>الرئيسية</li> </a>
+          <a href="store.html"> <li>المتجر</li> </a>
+          <a href="livraison.html"> <li>التوصيل</li> </a>
+          <a href="paiment.html"> <li>الدفع</li> </a>
+          <a href="Contact.html"> <li>اتصل بنا</li> </a>
+          <a href="about.html"> <li>من نحن</li> </a>
+          
+      </ul>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="index.html"
+      ><div class="meduim">
+       </div
+    ></a>
+    <div class="links" id="Desktop">
+      <ul>
+          <a href="index.html"> <li>الرئيسية</li> </a>
+          <a href="store.html"> <li>المتجر</li> </a>
+          <a href="livraison.html"> <li>التوصيل</li> </a>
+          <a href="paiment.html"> <li>الدفع</li> </a>
+          <a href="Contact.html"> <li>اتصل بنا</li> </a>
+          <a href="about.html"> <li>من نحن</li> </a>
+      </ul>
+    </div>
+    <div class="right"><i class="fa-solid fa-bars"></i></div>
+
+  </div>
+
+  <div class="container" id="slide">
+    <div class="pic" id="main-pic" ></div>
+  </div>
+  <div class="product_dz">
+    <h3>adidas</h3>
+    <h3> 1000 دج</h3>
+  </div>
+  <hr id="break" />
+  <br />
+  <div class="pic_product">
+    <h2>    :    طلب المنتج </h2>
+  </div>
+
+  <div class="form">
+    <form action="https://script.google.com/macros/s/AKfycbz_QEfC_mihqAehfanJhylAVYP82dCfysQQAIaFV7TD59ehz3-kdF3ZynoXaNZHWBl_Gg/exec" method="post" id="deliveryForm" onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="الاسم الكامل" name="name" required oninput="validateInput()" required />
+
+      <input type="number" id="phoneNumber" placeholder="رقم الهاتف" name="number" pattern="^0[5-7][0-9]{8}$" maxlength="10" minlength="10" required onblur="validateInput()" />
+      <select name="wilayas" id="wilayas" onclick="updateCommunes()">
+        <option value="" hidden>الولاية</option>
+        <option value="1">أدرار</option>
+        <option value="2">الشلف</option>
+        <option value="3">الأغواط</option>
+        <option value="4">أم البواقي</option>
+        <option value="5">باتنة</option>
+        <option value="6">بجاية</option>
+        <option value="7">بسكرة</option>
+        <option value="8">بشار</option>
+        <option value="9">البليدة</option>
+        <option value="10">البويرة</option>
+        <option value="11">تمنراست</option>
+        <option value="12">تبسة</option>
+        <option value="13">تلمسان</option>
+        <option value="14">تيارت</option>
+        <option value="15">تيزي وزو</option>
+        <option value="16">الجزائر</option>
+        <option value="17">الجلفة</option>
+        <option value="18">جيجل</option>
+        <option value="19">سطيف</option>
+        <option value="20">سعيدة</option>
+        <option value="21">سكيكدة</option>
+        <option value="22">سيدي بلعباس</option>
+        <option value="23">عنابة</option>
+        <option value="24">قالمة</option>
+        <option value="25">قسنطينة</option>
+        <option value="26">المدية</option>
+        <option value="27">مستغانم</option>
+        <option value="28">المسيلة</option>
+        <option value="29">معسكر</option>
+        <option value="30">ورقلة</option>
+        <option value="31">وهران</option>
+        <option value="32">البيض</option>
+        <option value="33">إليزي</option>
+        <option value="34">برج بوعريريج</option>
+        <option value="35">بومرداس</option>
+        <option value="36">الطارف</option>
+        <option value="37">تندوف</option>
+        <option value="38">تيسمسيلت</option>
+        <option value="39">الوادي</option>
+        <option value="40">خنشلة</option>
+        <option value="41">سوق أهراس</option>
+        <option value="42">تيبازة</option>
+        <option value="43">ميلة</option>
+        <option value="44">عين الدفلى</option>
+        <option value="45">النعامة</option>
+        <option value="46">عين تيموشنت</option>
+        <option value="47">غرداية</option>
+        <option value="48">غليزان</option>
+        <option value="49">تيميمون</option>
+        <option value="51">أولاد جلال</option>
+        <option value="52">بني عباس</option>
+        <option value="53">عين صالح</option>
+        <option value="55">تقرت</option>
+        <option value="56">جانت</option>
+        <option value="57">المغير</option>
+        <option value="58">المنيعة</option>
+
+
+      </select>
+
+      <select name="commune" id="commune" required>
+        <option value="" hidden>البلدية</option>
+      </select>
+
+      <div class="selection-box">
+        <h3>اختر اللون</h3>
+        <div class="color-selection">
+            <div class="color-option" style="background-color: red;" onclick="selectColor(this, 'أحمر')"></div>
+            <div class="color-option" style="background-color: blue;" onclick="selectColor(this, 'أزرق')"></div>
+            <div class="color-option" style="background-color: green;" onclick="selectColor(this, 'أخضر')"></div>
+            <div class="color-option" style="background-color: black;" onclick="selectColor(this, 'أسود')"></div>
+        </div>
+        <h3>اختر الحجم</h3>
+        <div class="size-selection">
+            <div class="size-option" onclick="selectSize(this, '38')">38</div>
+            <div class="size-option" onclick="selectSize(this, '39')">39</div>
+            <div class="size-option" onclick="selectSize(this, '40')">40</div>
+            <div class="size-option" onclick="selectSize(this, '41')">41</div>
+            <div class="size-option" onclick="selectSize(this, '42')">42</div>
+        </div>
+    </div>
+
+      <select name="deliveryType" id="deliveryType" required>
+      <option value="" hidden>التوصيل</option>
+        <option value="desk" selected>الى المكتب</option>
+        <option value="domicile">الى المنزل</option>
+      </select>
+  </div>
+
+
+
+
+  <div class="details">
+    <div>
+      <p id="productPrice">1000 دج</p>
+      <p>: ثمن المنتج </p>
+      <input type="hidden" name="Prix" id="productPriceInput" value="<?php echo $price; ?>">
+    </div>
+    <div>
+      <p id="livraisonPrice">...</p>
+      <p>: ثمن التوصيل </p>
+      <input type="hidden" name="Livraison" id="livraisonPriceInput" value="">
+    </div>
+    <div>
+      <p><mark id="totalAmount">1000 دج</mark></p>
+      <p>: الاجمالي </p>
+      <input type="hidden" name="Total" id="TotalInput" value="">
+    </div>
+  </div>
+  <input type="hidden" name="Date" id="Date" value="<?php echo ($date); ?>" />
+  <input type="hidden" name="product" id="product" value="<?php echo ($n); ?>" />
+  <input type="hidden" name="Type" id="TypeInput" value="" />
+  <input type="hidden" name="Livraison" id="Livraison" value="" />
+  <input type="hidden" name="Quantite" id="QuantiteInput" value="" />
+
+  <div class="valider">
+    <button type="submit" id="valider" name="valider">شراء</button>
+  </div>
+  </form>
+  <hr id="break">
+  <br><br>
+  <div class="pic_product">
+    <h2>    : الوصف</h2>
+  </div>
+
+  <div class="about_us">
+    "استعد لتحقيق الأداء الأمثل مع حذاء أديداس الجديد الذي يجمع بين التصميم العصري والتكنولوجيا المتقدمة. مصنوع من خامات عالية الجودة لضمان الراحة والمتانة، هذا الحذاء مثالي للرياضة والاستخدام اليومي. يتميز بوسادة قدم مريحة ونظام تهوية مبتكر للحفاظ على القدمين باردة وجافة. بالإضافة إلى ذلك، يوفر نعل خارجي مرن قبضة ممتازة على مختلف الأسطح. مع تصميمه الأنيق والشعار الأيقوني لأديداس، ستتمكن من الظهور بمظهر أنيق وأداء رائع في كل خطوة. ارتقِ بمستوى أدائك مع حذاء أديداس المثالي لكل المناسبات."
+
+
+  </div>
+  <br><br>
+  <div class="pic_product">
+    <h2>    : اراء الزبائن</h2>
+  </div>
+  <div class="reviews">
+        <button class="nav-button" id="prevBtn">←</button>
+        <div class="review-content" id="reviewContent">
+        </div>
+        <button class="nav-button" id="nextBtn">→</button>
+      </div>
+  <br><br>
+<script>
+  let selectedColor = null;
+        let selectedSize = null;
+
+        function selectColor(element, color) {
+            if (selectedColor) {
+                selectedColor.classList.remove('selected');
+            }
+            element.classList.add('selected');
+            selectedColor = element;
+            console.log("Selected color:", color);
+        }
+
+        function selectSize(element, size) {
+            if (selectedSize) {
+                selectedSize.classList.remove('selected');
+            }
+            element.classList.add('selected');
+            selectedSize = element;
+            console.log("Selected size:", size);
+        }
+</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const wilayaSelect = document.getElementById('wilayas');
+      const quantitySelect = document.getElementById('Quantite');
+      const deliveryTypeSelect = document.getElementById('deliveryType');
+      const livraisonPrice = document.getElementById('livraisonPrice');
+      const totalAmount = document.getElementById('totalAmount');
+      const productPriceInput = document.getElementById('productPriceInput');
+      const livraisonPriceInput = document.getElementById('livraisonPriceInput');
+      const livraisonHiddenInput = document.getElementById('Livraison');
+      const quantityHiddenInput = document.getElementById('QuantiteInput');
+      const totalHiddenInput = document.getElementById('TotalInput');
+      const typeHiddenInput = document.getElementById('TypeInput');
+      const submitButton = document.getElementById('valider');
+
+      const elements = {
+        wilayaSelect,
+        quantitySelect,
+        livraisonPrice,
+        totalAmount,
+        productPriceInput,
+        livraisonPriceInput,
+        livraisonHiddenInput,
+        quantityHiddenInput,
+        totalHiddenInput,
+        typeHiddenInput,
+        submitButton
+      };
+      Object.entries(elements).forEach(([name, element]) => {
+        if (!element) {
+          console.error(`${name} is missing from the DOM.`);
+        } else {
+          console.log(`${name} is correctly referenced.`);
+        }
+      });
+
+      wilayaSelect.addEventListener('change', updatePrice);
+      quantitySelect.addEventListener('change', updatePrice);
+      deliveryTypeSelect.addEventListener('change', updatePrice);
+
+      function updatePrice() {
+        const wilayaCode = wilayaSelect.value;
+        const quantity = quantitySelect.value;
+        const deliveryType = deliveryTypeSelect.value;
+        const productPrice = parseFloat(productPriceInput.value);
+
+        if (wilayaCode && quantity && deliveryType) {
+          const jsonFile = deliveryType === 'desk' ? 'Desk.json' : 'Domicile.json';
+
+          fetch(jsonFile)
+            .then(response => response.json())
+            .then(data => {
+              let deliveryCost = null;
+              for (const [cost, wilayas] of Object.entries(data)) {
+                if (wilayas.includes(wilayaCode)) {
+                  deliveryCost = cost;
+                  break;
+                }
+              }
+
+              const totalProductPrice = productPrice * quantity;
+              const totalCost = deliveryCost ? (totalProductPrice + parseInt(deliveryCost)) : totalProductPrice;
+
+              livraisonPrice.textContent = deliveryCost ? `${deliveryCost} دج` : 'Price not available';
+              totalAmount.textContent = `${totalCost} دج`;
+              livraisonPriceInput.value = deliveryCost ? deliveryCost : '';
+
+              livraisonHiddenInput.value = deliveryCost ? deliveryCost : '';
+              quantityHiddenInput.value = quantity;
+              totalHiddenInput.value = totalCost;
+              typeHiddenInput.value = deliveryType;
+
+              totalHiddenInput.value = totalCost;
+
+              console.log('Total amount updated to:', totalCost);
+            })
+            .catch(error => {
+              console.error('Error fetching JSON:', error);
+              alert('An error occurred while fetching the delivery price. Please try again.');
+            });
+        }
+      }
+
+      submitButton.addEventListener('click', function(event) {
+        const deliveryType = deliveryTypeSelect.value;
+        if (deliveryType === 'domicile' && livraisonPriceInput.value === '') {
+          event.preventDefault();
+          alert('Please select a valid delivery option.');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+
+<script>
+  let communeData = [];
+
+  const filePath = 'communeData.json';
+
+  fetch(filePath)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      communeData = data;
+      console.log('Data loaded successfully:', communeData);
+      document.getElementById('wilayas').addEventListener('change', updateCommunes);
+    })
+    .catch(error => {
+      console.error('Error loading JSON:', error);
+    });
+
+  function updateCommunes() {
+    const wilayaSelect = document.getElementById('wilayas');
+    const communeSelect = document.getElementById('commune');
+    const selectedWilaya = wilayaSelect.value;
+
+    communeSelect.innerHTML = '<option value="" hidden>البلدية</option>';
+
+    const filteredCommunes = communeData.filter(commune => commune.wilaya_id === selectedWilaya);
+
+    if (filteredCommunes.length > 0) {
+      communeSelect.setAttribute('required', 'required');
+      communeSelect.classList.remove('disabled');
+      communeSelect.removeAttribute('disabled');
+    } else {
+      communeSelect.removeAttribute('required');
+      communeSelect.classList.add('disabled');
+      communeSelect.setAttribute('disabled', 'disabled');
+    }
+
+    filteredCommunes.forEach(commune => {
+      const option = document.createElement('option');
+      option.value = commune.ar_name;
+      option.textContent = commune.ar_name;
+      communeSelect.appendChild(option);
+    });
+  }
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('deliveryForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      var form = this; // Use `this` to refer to the form element
+      var formData = new FormData(form);
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', form.action, true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          window.location.href = 'Congratulation.php';
+        }
+      };
+      xhr.send(new URLSearchParams(formData));
+      document.getElementById('valider').disabled = true;
+      document.getElementById('valider').style.opacity = '0.2';
+    });
+  });
+</script>
+
+<script>
+  function validateInput() {
+    var inputText = document.getElementById("phoneNumber").value;
+    var regex = /^0[5-7][0-9]{8}$/;
+    if (!regex.test(inputText)) {
+      document.getElementById("phoneNumber").value = "";
+    }
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const reviews = document.querySelectorAll(".review");
+    let currentReview = 0;
+
+    function showReview(index) {
+      reviews.forEach((review, i) => {
+        review.classList.toggle("active", i === index);
+      });
+    }
+
+    document.getElementById("prevBtn").addEventListener("click", function() {
+      currentReview =
+        currentReview > 0 ? currentReview - 1 : reviews.length - 1;
+      showReview(currentReview);
+    });
+
+    document.getElementById("nextBtn").addEventListener("click", function() {
+      currentReview =
+        currentReview < reviews.length - 1 ? currentReview + 1 : 0;
+      showReview(currentReview);
+    });
+
+    showReview(currentReview);
+  });
+</script>
+<script src="page.js"></script>
+
+</html>

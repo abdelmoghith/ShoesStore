@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/pink sneakers.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hide.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <title>Acceuil</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="" id="exit">✖</div>
+      <div class="links">
+        <ul>
+            <a href="index.html"> <li>الرئيسية</li> </a>
+            <a href="store.html"> <li>المتجر</li> </a>
+            <a href="livraison.html"> <li>التوصيل</li> </a>
+            <a href="paiment.html"> <li>الدفع</li> </a>
+            <a href="Contact.html"> <li>اتصل بنا</li> </a>
+            <a href="about.html"> <li>من نحن</li> </a>
+            
+        </ul>
+      </div>
+    </div>
+    <div class="navbar">
+      <a href="index.html"
+        ><div class="meduim">
+         </div
+      ></a>
+      <div class="links" id="Desktop">
+        <ul>
+            <a href="index.html"> <li>الرئيسية</li> </a>
+            <a href="store.html"> <li>المتجر</li> </a>
+            <a href="livraison.html"> <li>التوصيل</li> </a>
+            <a href="paiment.html"> <li>الدفع</li> </a>
+            <a href="Contact.html"> <li>اتصل بنا</li> </a>
+            <a href="about.html"> <li>من نحن</li> </a>
+        </ul>
+      </div>
+      <div class="right"><i class="fa-solid fa-bars"></i></div>
+
+    </div>
+    <div class="intro">
+      <div class="shoe_intro">
+       
+      </div>
+    </div>
+    <div class="container">
+      <br />
+      <div class="title">
+        <div class="first">المتجر</div>
+        <hr id="break" />
+      </div>
+      <div class="products">
+        <a href="Product.html">
+          <div class="">
+            <div class="Picture" id="Product_1"></div>
+            <div class="Description">
+              <p id="">1000 da</p>
+            </div>
+          </div>
+        </a>
+        <a href="Product.html">
+          <div class="">
+            <div class="Picture" id="Product_2"></div>
+            <div class="Description">
+              <p id="">1000 da</p>
+            </div>
+          </div>
+        </a>
+        <a href="Product.html">
+          <div class="">
+            <div class="Picture" id="Product_3"></div>
+            <div class="Description">
+              <p id="">1000 da</p>
+            </div>
+          </div>
+        </a>
+        <a href="Product.html">
+          <div class="">
+            <div class="Picture" id="Product_4"></div>
+            <div class="Description">
+              <p id="">1000 da</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <a href=""> <div class="More">المزيد</div></a>
+    <div class="title">
+      <div class="first">التصنيفات</div>
+      <hr id="break" />
+      <div class="Category">
+        <a href="Product.html">
+          <div class="">
+            <div class="Category_x" id="Product_1"></div>
+            <div class="Description">
+              <p id="Cat_p">احذية اطفال</p>
+            </div>
+          </div>
+        </a>
+        <a href="Product.html">
+          <div class="">
+            <div class="Category_x" id="Product_2"></div>
+            <div class="Description">
+                <p id="Cat_p">احذية نسائية</p>
+            </div>
+          </div>
+        </a>
+        <a href="Product.html">
+          <div class="">
+            <div class="Category_x" id="Product_3"></div>
+            <div class="Description">
+                <p id="Cat_p">احذية رجالية</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <br />
+    <hr id="break" />
+
+    <br />
+    <br />
+    <div class="footer">
+      <a href="index.html"><div class="meduim"></div></a>
+      <ul>
+        <a href="index.html"> <li>الرئيسية</li> </a>
+        <a href="store.html"> <li>المتجر</li> </a>
+        <a href="livraison.html"> <li>التوصيل</li> </a>
+        <a href="paiment.html"> <li>الدفع</li> </a>
+        <a href="Contact.html"> <li>اتصل بنا</li> </a>
+        <a href="about.html"> <li>من نحن</li> </a>
+      </ul>
+      <div class="icon">
+        <a href=""><div id="facebook"></div></a>
+        <a href=""><div id="instagram"></div></a>
+        <a href=""><div id="tiktok"></div></a>
+      </div>
+    </div>
+  </body>
+  <script src="page.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const reviews = document.querySelectorAll(".review");
+      let currentReview = 0;
+
+      function showReview(index) {
+        reviews.forEach((review, i) => {
+          review.classList.toggle("active", i === index);
+        });
+      }
+
+      document.getElementById("prevBtn").addEventListener("click", function () {
+        currentReview =
+          currentReview > 0 ? currentReview - 1 : reviews.length - 1;
+        showReview(currentReview);
+      });
+
+      document.getElementById("nextBtn").addEventListener("click", function () {
+        currentReview =
+          currentReview < reviews.length - 1 ? currentReview + 1 : 0;
+        showReview(currentReview);
+      });
+
+      // Initialize the first review
+      showReview(currentReview);
+    });
+  </script>
+</html>
